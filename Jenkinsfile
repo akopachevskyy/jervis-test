@@ -1,4 +1,4 @@
-library 'my-shared-library'
+#library 'my-shared-library'
 
 pipeline {
     agent {
