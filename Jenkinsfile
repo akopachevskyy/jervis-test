@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'stable && docker && linux'
+        label 'stable'
     }
     stages {
         stage('Build') {
