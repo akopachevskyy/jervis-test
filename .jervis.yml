@@ -1,1 +1,2 @@
 language: java
+script: echo this is scirpt
