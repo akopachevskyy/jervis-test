@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'stable && docker && linux'
+    }
     stages {
         stage('Build') {
             steps {
