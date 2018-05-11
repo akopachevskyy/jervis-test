@@ -7,9 +7,7 @@ pipeline {
     stages {
         stage('test load custom') {
             steps {
-                script {
-                    loadCustomResource("some-file")
-                }
+                registerDockerAgent("some-file")
             }
         }
     }
