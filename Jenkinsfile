@@ -1,11 +1,15 @@
+library 'my-shared-library'
+
 pipeline {
     agent {
         label 'stable'
     }
     stages {
-        stage('Build') {
+        stage('test load custom') {
             steps {
-                echo 'Building..'
+                script {
+                    loadCustomResource("some-file")
+                }
             }
         }
     }
