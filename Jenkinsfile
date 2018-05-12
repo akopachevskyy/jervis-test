@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('register docker template') {
             steps {
-                template = [
+                def template = [
                     //DOCKER CONTAINER LIFECYCLE
                     docker_image_name: "jervis-docker-jvm:12",
                     //PULL IMAGE SETTINGS
@@ -31,7 +31,7 @@ pipeline {
                     launch_jnlp_linux_user: "jenkins",
                     launch_jnlp_slave_jar_options: "-workDir /home/jenkins",
                     launch_jnlp_lauch_timeout: 120,
-                    launch_jnlp_different_jenkins_master_url: "http://192.168.89.18:8080",
+                    launch_jnlp_different_jenkins_master_url: "http://192.168.88.203:8080",
                     launch_jnlp_ignore_certificate_check: false,
                 ]
                 registerDockerAgent(template)
