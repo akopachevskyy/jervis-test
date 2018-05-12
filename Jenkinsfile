@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-        label 'jervis_generator'
+        label 'stable'
     }
     stages {
         stage('register docker template') {
