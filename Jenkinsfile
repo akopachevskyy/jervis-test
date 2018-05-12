@@ -21,7 +21,8 @@ pipeline {
                         launch_jnlp_different_jenkins_master_url: "http://192.168.88.203:8080",
                         launch_jnlp_ignore_certificate_check: false,
                     ]
-                    //registerDockerAgent(template)
+                    def test = "ssss"
+                    registerDockerAgent(test)
                  }
             }
         }
