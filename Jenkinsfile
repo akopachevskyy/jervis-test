@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     def template = [
-                        docker_image_name: "jervis-docker-jvm:latest",
+                        docker_image_name: "jervis-docker-jvm:latest1",
                         pull_strategy: "pull_never",
                         remote_fs_root: "/home/jenkins",
                         labels: "kopachevsky1 stable docker ubuntu1604 sudo language:shell language:groovy language:java env jdk",
