@@ -13,7 +13,6 @@ pipeline {
                         pull_strategy: "pull_never",
                         remote_fs_root: "/home/jenkins",
                         labels: "kopachevsky3 stable docker ubuntu1604 sudo language:shell language:groovy language:java env jdk",
-
                         usage: "exclusive",
                         launch_method: "launch_jnlp",
                         launch_jnlp_linux_user: "jenkins",

@@ -1,2 +1,7 @@
-language: java
-script: echo this is scirpt
+language: shell
+script: true
+services:
+  jervis:
+    docker_image:
+      path: .
+      name: costom-jervice-image
