@@ -1,6 +1,11 @@
 language: shell
-script:
-  - docker ps
+
+script: true
+
+install:
+  - echo "Install"
+  - docker ps 
+
 services:
   jervis:
     docker_image:
