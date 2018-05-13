@@ -1,7 +1,8 @@
 language: shell
-script: true
+script:
+  - docker ps
 services:
   jervis:
     docker_image:
       path: .
-      name: costom-jervice-image
+      name: costom-jervice-image q
