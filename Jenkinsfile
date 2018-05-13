@@ -19,7 +19,7 @@ pipeline {
                         launch_jnlp_linux_user: "jenkins",
                         launch_jnlp_slave_jar_options: "-workDir /home/jenkins",
                         launch_jnlp_lauch_timeout: 120,
-                        launch_jnlp_different_jenkins_master_url: "http://172.22.28.12:8080",
+                        launch_jnlp_different_jenkins_master_url: "http://10.0.0.170:8080",
                         launch_jnlp_ignore_certificate_check: false,
                     ]
                     registerDockerAgent(template)
