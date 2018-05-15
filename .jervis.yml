@@ -1,19 +1,15 @@
-language: java
+language: ruby
 
 os:
   - ubuntu
   - centos
 
-env:
-  - ANIMAL=cat
+gemfile:
+  - testGemfile1
+  - testGemfile2
 
 script:
-  - echo "script ANIMAL = ${ANIMAL}"
+  - echo "script BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}"
 
 install:
-  - echo "install ANIMAL = ${ANIMAL}"
-
-jenkins:
-  os:
-    - centos
-    - ubuntu
+  - echo "install BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}"
