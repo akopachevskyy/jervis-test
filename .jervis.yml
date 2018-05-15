@@ -1,4 +1,6 @@
-language: shell
+language:
+  - shell
+  - java
 
 os:
   - ubuntu
