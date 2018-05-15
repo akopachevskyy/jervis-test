@@ -2,6 +2,8 @@ language: shell
 
 env:
   - ANIMAL=cat
+  - ANIMAL=dog
+
 
 script:
   - echo "script ANIMAL = ${ANIMAL}"
