@@ -1,15 +1,15 @@
 language: ruby
 
-os:
-  - ubuntu
-  - centos
+env:
+  - SOME_VAR=value1
+  - SOME_VAR=value2
 
 gemfile:
   - testGemfile1
   - testGemfile2
 
 script:
-  - echo "script BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}"
+  - echo "script BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}, SOME_VAR = ${SOME_VAR}"
 
 install:
-  - echo "install BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}"
+  - echo "install BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}, SOME_VAR = ${SOME_VAR}"
