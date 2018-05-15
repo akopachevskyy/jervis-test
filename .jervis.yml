@@ -4,10 +4,4 @@ script: true
 
 install:
   - echo "Install"
-  - docker ps 
-
-services:
-  jervis:
-    docker_image:
-      path: .
-      name: costom-jervice-image q
+  - docker ps
