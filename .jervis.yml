@@ -1,7 +1,9 @@
 language: shell
 
+env:
+  - ANIMAL=cat
+
 script: true
 
 install:
-  - echo "Install"
-  - docker ps
+  - echo "ANIMAL = ${AMIMAL}"
