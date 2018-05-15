@@ -1,6 +1,4 @@
-language:
-  - shell
-  - java
+language: java
 
 os:
   - ubuntu
@@ -14,3 +12,8 @@ script:
 
 install:
   - echo "install ANIMAL = ${ANIMAL}"
+
+jenkins:
+  os:
+    - centos
+    - ubuntu
