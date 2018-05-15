@@ -1,9 +1,11 @@
 language: shell
 
+os:
+  - ubuntu
+  - centos
+
 env:
   - ANIMAL=cat
-  - ANIMAL=dog
-
 
 script:
   - echo "script ANIMAL = ${ANIMAL}"
