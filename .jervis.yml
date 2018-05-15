@@ -3,7 +3,8 @@ language: shell
 env:
   - ANIMAL=cat
 
-script: true
+script:
+  - echo "script ANIMAL = ${ANIMAL}"
 
 install:
-  - echo "ANIMAL = ${AMIMAL}"
+  - echo "install ANIMAL = ${ANIMAL}"
