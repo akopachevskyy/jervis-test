@@ -4,8 +4,8 @@ java-os:
   - centos
   - ubuntu
 jdk:
-  - openjdk5
-  - openjdk6
+  - openjdk8
+  - openjdk9
 
 script:
   - echo "script BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}, SOME_VAR = ${SOME_VAR}"
