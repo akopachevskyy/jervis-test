@@ -1,12 +1,8 @@
-language: ruby
+language: java
 
-env:
-  - SOME_VAR=value1
-  - SOME_VAR=value2
-
-gemfile:
-  - testGemfile1
-  - testGemfile2
+java-os:
+  - centos
+  - ubuntu
 
 script:
   - echo "script BUNDLE_GEMFILE = ${BUNDLE_GEMFILE}, SOME_VAR = ${SOME_VAR}"
