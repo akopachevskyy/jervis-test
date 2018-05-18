@@ -1,6 +1,6 @@
 language: java
 
-java-os:
+os:
   - centos
   - ubuntu
 
