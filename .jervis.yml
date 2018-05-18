@@ -4,9 +4,10 @@ os:
   - centos
   - ubuntu
 
-script:
-  - echo "os running JERVIS_OS=${JERVIS_OS}"
+script: true
 
 install:
-  - echo "os running JERVIS_OS=${JERVIS_OS}"
+  - echo "ENV RUNNING"
+  - env
+
 
