@@ -8,6 +8,6 @@ script: true
 
 install:
   - echo "CHECK AGENT IMAGE"
-  - echo "cat /etc/who_am_i"
+  - cat /etc/who_am_i
 
 
