@@ -7,7 +7,7 @@ os:
 script: true
 
 install:
-  - echo "ENV RUNNING"
-  - env
+  - echo "CHECK AGENT IMAGE"
+  - echo "cat /etc/who_am_i"
 
 
